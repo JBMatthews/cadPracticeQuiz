@@ -1,0 +1,67 @@
+{
+  "questions": [
+    {
+      "prompt": "DUPLICATE: Which one of the following is NOT a UI Action type?",
+      "type": "single",
+      "choices": [
+        "Form choice",
+        "List choice",
+        "Form button",
+        "List banner button"
+      ],
+      "correct_answers": [
+        "Form choice"
+      ],
+      "explanation": "UI Action Types: Form button, Form context menu, Form link, List banner button, List bottom button, List context menu, List choice, List link"
+    },
+    {
+      "prompt": "What are some of the benefits of extending an existing table such as the Task table when creating a new application?",
+      "type": "single",
+      "choices": [
+        "You can repurpose existing fields by simply changing the label.",
+        "Use existing fields with no modifications.",
+        "Existing logic from the parent table will be automatically applied to the new table.",
+        "All of the parent table records are copied to the new table."
+      ],
+      "correct_answers": [
+        "You can repurpose existing fields by simply changing the label.",
+        "Use existing fields with no modifications.",
+        "Existing logic from the parent table will be automatically applied to the new table."
+      ],
+      "explanation": "\"All of the parent table records are copied to the new table\" is not true. Records are NOT copied."
+    },
+    {
+      "prompt": "DUPLICATE: Which one of the following is NOT a UI Action type?",
+      "type": "single",
+      "choices": [
+        "Form choice",
+        "List choice",
+        "Form button",
+        "List banner button"
+      ],
+      "correct_answers": [
+        "Form choice"
+      ],
+      "explanation": "UI Action Types: Form button, Form context menu, Form link, List banner button, List bottom button, List context menu, List choice, List link"
+    },
+    {
+      "prompt": "Which of the following are configured in an Email Notification?",
+      "type": "multiple",
+      "choices": [
+        "Who will receive the notification.",
+        "What content will be in the notification.",
+        "When to send the notification.",
+        "How to send the notification."
+      ],
+      "correct_answers": [
+        "Who will receive the notification.",
+        "What content will be in the notification.",
+        "When to send the notification."
+      ],
+      "explanation": "There is no configuration option as 'How to send the notification'."
+    }
+  ]
+}
+
+
+

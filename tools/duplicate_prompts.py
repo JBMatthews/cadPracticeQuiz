@@ -4,27 +4,25 @@ def find_duplicate_prompts(data):
     prompt_counts = {}
     duplicate_prompts = []
 
-    for prompt in data:
-        question = prompt.get("question")
-        if question in prompt_counts:
-            prompt_counts[question] += 1
-            if prompt_counts[question] == 2:
-                duplicate_prompts.append(question)
+    for question in data["questions"]:
+        prompt = question.get("prompt")
+        if prompt in prompt_counts:
+            prompt_counts[prompt] += 1
+            if prompt_counts[prompt] == 2:
+                duplicate_prompts.append(prompt)
         else:
-            prompt_counts[question] = 1
+            prompt_counts[prompt] = 1
 
     return duplicate_prompts
 
 def main():
-    with open("quiz_data.json", "r") as file:
+    with open("quiz_data_cleaned.json", "r") as file:
         data = json.load(file)
 
     duplicate_prompts = find_duplicate_prompts(data)
     print("Duplicate Prompts:")
-    counter = 0
     for prompt in duplicate_prompts:
-        counter += 1
-        print(f"{counter}. {prompt}")
+        print(prompt)
 
     total_duplicates = len(duplicate_prompts)
     print(f"Total Number of Duplicates: {total_duplicates}")
